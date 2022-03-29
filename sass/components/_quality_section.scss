@@ -1,0 +1,51 @@
+
+    
+.quality-title {
+    display: none;
+  }
+   
+  .grey-square {
+    width: 270px;
+    height: 120px;
+    background-color: $brand-grey;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quality-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+   
+  }
+  
+  .quality-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $brand-dark;
+    margin: 0;
+  }
+  
+  .quality-h3 {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: $brand-dark;
+    margin-bottom: 10px;
+  }
+  
+  .quality-p {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    color: $p-color;
+    margin-top: 10px;
+  }
+

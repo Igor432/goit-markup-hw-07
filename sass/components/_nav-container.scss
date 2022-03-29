@@ -1,0 +1,26 @@
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  .nav_logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $blue-color;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  .nav_logo > span {
+    color: $brand-dark;
+  }
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
