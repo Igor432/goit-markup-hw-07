@@ -29,4 +29,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+ul {
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
 /*# sourceMappingURL=variables.css.map */
