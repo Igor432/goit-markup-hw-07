@@ -35,6 +35,7 @@
   &:hover,
   &:focus {
     border-color: $blue-color;
+    fill: $blue-color;
   }
 
   &:hover,  { .client__icons {
