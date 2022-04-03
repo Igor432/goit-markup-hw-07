@@ -1,10 +1,10 @@
 
     
-.quality-title {
+.quality__title {
     display: none;
   }
    
-  .grey-square {
+  .grey__square {
     width: 270px;
     height: 120px;
     background-color: $brand-grey;
@@ -14,14 +14,14 @@
     align-items: center;
   }
   
-  .quality-list {
+  .quality__list {
     list-style: none;
     display: flex;
     gap: 30px;
   padding-inline-start: 0px;
   }
   
-  .quality-title {
+  .quality__title {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.1;
@@ -31,7 +31,7 @@
     margin: 0;
   }
   
-  .quality-h3 {
+  .quality__h3 {
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -41,7 +41,7 @@
     margin-bottom: 10px;
   }
   
-  .quality-p {
+  .quality__p {
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.7;

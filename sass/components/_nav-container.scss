@@ -1,13 +1,9 @@
-.container-nav {
-  display: flex;
-  align-items: center;
-}
 
 .nav {
   display: flex;
   align-items: center;
 
-  .nav_logo {
+  .nav__logo {
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -16,7 +12,7 @@
     letter-spacing: 0.03em;
     text-decoration: none;
   }
-  .nav_logo > span {
+  .nav__logo > span {
     color: $brand-dark;
   }
 }
