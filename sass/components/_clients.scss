@@ -38,17 +38,16 @@
     fill: $blue-color;
   }
 
-  &:hover,  { .client__icons {
+  &:hover  { .client__icons {
     fill: $blue-color;
  }
-
+  }
  &:focus { .client__icons {
     fill: $blue-color;
  }
   
 }
-  }
-}
+  
 
 .client__icons {
   fill: $icons-color;
