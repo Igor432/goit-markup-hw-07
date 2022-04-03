@@ -4,6 +4,17 @@
     margin-left: auto;
     justify-content: center;
     align-items: center;
+    padding-inline-start: 0px;
+
+    &:first-child {
+      margin-right: 50px;
+    }
+
+  }
+
+  .contacts__firstchild {
+    margin-right: 30px;
+  }
 
     .contacts__item {
       display: list-item;
@@ -12,12 +23,7 @@
       text-align: center;
     }
   
-    .contacts:first-child {
-      margin-right: 50px;
-    }
-    
-  }
-  
+
   .contacts__link,
   .contacts__link {
     color: $p-color;

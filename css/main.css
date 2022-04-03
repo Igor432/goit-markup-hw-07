@@ -124,9 +124,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
-.contacts .contacts__item {
+.contacts:first-child {
+  margin-right: 50px;
+}
+
+.contacts__firstchild {
+  margin-right: 30px;
+}
+
+.contacts__item {
   display: list-item;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -135,10 +145,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
-
-.contacts .contacts:first-child {
-  margin-right: 50px;
 }
 
 .contacts__link,
@@ -471,7 +477,7 @@ header {
 .team__links:hover:hover .social__icons,
 .team__links:hover:focus .social__icons, .team__links:focus:hover .social__icons,
 .team__links:focus:focus .social__icons {
-  background-color: #ffffff;
+  fill: #ffffff;
 }
 
 .social__icons {
