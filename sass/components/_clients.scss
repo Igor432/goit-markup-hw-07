@@ -40,10 +40,12 @@
 
   &:hover  { .client__icons {
     fill: $blue-color;
+    color: $blue-color;
  }
   }
  &:focus { .client__icons {
     fill: $blue-color;
+    color: $blue-color;
  }
   
 }
