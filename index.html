@@ -424,5 +424,68 @@
 
     </footer>
 
+    <!--MODAL-->
+
+ <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" data-modal-close class="close__button"> <svg class="close__icon" width="11" height="11">
+              <use href="./images/symbol-defs.svg#icon-Vector-1"></use></button>
+              <form class="register js-speaker-form">
+              <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+    <div class="form__field">
+              <label for="name" class="name__label" >Имя<svg class="modal__icon name__icon" width="12" height="12">
+                <use
+                  href="./images/symbol-defs.svg#icon-Vector"
+                ></use></svg> </label>
+               
+              <input type="text"  id="name" name="name__input">
+            </div>
+
+            <div class="form__field">
+              <label for="tel" class="tel__label">Телефон   <svg class="modal__icon tel__icon" width="13" height="13">
+                <use
+                  href="./images/symbol-defs.svg#icon-Vector-11"
+                ></use></svg></label>
+            
+              <input type="text"  id="tel" name="tel__input">
+            </div>
+             
+
+            <div class="form__field">
+              <label for="email"class="email__label"  >Почта <svg class="modal__icon name__icon" width="16" height="12">
+                <use
+                  href="./images/symbol-defs.svg#black-envelope"
+                ></use></svg></label> 
+              <input type="text"  id="email" name="email__input">
+            </div>
+            <div class="form__field">
+              <label for="comments" class="comments__label">Комментарий</label>
+              <textarea name="comments" placeholder="Введите текст" class="comments" rows="4" id="comments"></textarea>
+            </div>
+             
+    <div class="policy">
+     
+             
+              <label for="term" class="term__label"> 
+                <input type="checkbox" class="term " value="term" id="term">
+                <span class="check__icon"><svg class="checkbox__icon" width="11" height="8">
+                  <use
+                    href="./images/symbol-defs.svg#icon-checkmark1"
+                  ></use></svg></span> <p class="policy__text">
+                Соглашаюсь с рассылкой и принимаю <a href="" class="policy__terms"> Условия договора</a></p>
+              </label>
+            </div>
+          
+    <div class="button__submit">
+              <button type="button" class="submit">Отправить</button>
+            </div>
+              </form>
+            </div>
+        </div>
+
+    
+        <script src="../goit-markup-hw-07/main.js"></script>
+
+        
 </body>
 </html>
