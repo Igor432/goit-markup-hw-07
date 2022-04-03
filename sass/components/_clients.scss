@@ -36,6 +36,13 @@
   &:focus {
     border-color: $blue-color;
   }
+
+  &:hover { .client__icons {
+    fill: $blue-color;
+ }
+ &:focus { .client__icons {
+    fill: $blue-color;
+ }
   
 }
   
@@ -45,10 +52,7 @@
     fill: $icons-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  
- &:hover .client__icons,
-&:focus .client__icons {
-    fill: $blue-color;
-  }
+   
+ 
 
 }
