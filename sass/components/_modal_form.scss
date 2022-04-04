@@ -37,17 +37,6 @@ input {
   cursor: pointer;
 }
 
-.modal {
-  background: #ffffff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  border: 1px solid rgba(0, 0, 0, 0.582);
-  display: flex;
-}
 
 label {
   position: relative;
@@ -58,35 +47,58 @@ label {
   color: #757575;
 }
 
-.close__button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+
+
+.modal {
+  background: #ffffff;
   position: absolute;
-  top: 8px;
-  right: 8px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  border: 1px solid rgba(0, 0, 0, 0.582);
   display: flex;
-  cursor: pointer;
+
+  .close__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .register {
+    padding: 40px;
+  }
+
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+
+
 }
 
-.register {
-  padding: 40px;
-}
 
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-}
+
+
+
+
 
 .term {
   width: 1px;
@@ -111,6 +123,8 @@ label {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+}
+
 .check__icon {
   display: flex;
   width: 16px;
@@ -122,7 +136,7 @@ label {
   justify-content: center;
   text-align: center;
   cursor: pointer;
-}
+
 
 .checkbox__icon {
   margin-right: 0px;
@@ -130,7 +144,6 @@ label {
   display: none;
   cursor: pointer;
 }
-
 }
 
 .policy {
@@ -145,9 +158,27 @@ label {
   line-height: 1.4;
   color: var(--p-color);
   letter-spacing: 0.03em;
+
+
+  .policy__terms {
+    color: $blue-color;
+  }
 }
 
 
+
+
+
+.form__field {
+  margin-top: 10px;
+
+  &:focus, &:focus-within { .modal__icon {
+    fill: $blue-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  } 
+}
 
 .name__label,
 .tel__label,
@@ -155,29 +186,14 @@ label {
 .comments__label {
   margin: 0px;
   margin-bottom: 4px;
-}
 
-.form__field {
-  margin-top: 10px;
-
-  &:focus { .modal-icon {
-    color: $blue-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: $blue-color;
+  .modal__icon {
+    position: absolute;
+    left: 12px;
+    top: 32px;
   }
-  } 
   
-  &:focus-within { .modal-icon {
-    color: $blue-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-  } 
 }
-
-
 
 .comments {
   width: 448px;
@@ -193,6 +209,9 @@ textarea {
   cursor: pointer;
 }
 
+}
+
+
 .term__label {
   margin: 0;
 
@@ -206,6 +225,14 @@ textarea {
   align-items: center;
 }
 
+
+
+.button__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
 .submit {
   text-align: center;
   width: 200px;
@@ -218,11 +245,6 @@ textarea {
   color: #ffffff;
 }
 
-.button__submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
 }
 
 .name__label:focus-within,
@@ -249,6 +271,4 @@ textarea {
   top: 32px;
 }
 
-.policy__terms {
-  color: $blue-color;
-}
+
