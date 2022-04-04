@@ -98,6 +98,8 @@ footer {
   margin-left: 94px;
   margin-top: 0;
   margin-bottom: 0;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .menu .menu__list {
