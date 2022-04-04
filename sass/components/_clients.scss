@@ -20,7 +20,7 @@
 }
 
 .client__icons {
-  fill: $icons-color;
+  color: $icons-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
@@ -44,12 +44,12 @@
   }
 
   &:hover { .client__icons {
-    fill: $blue-color;
+    color: $blue-color;
 
  }
   }
  &:focus { .client__icons {
-    fill: $blue-color;
+  color: $blue-color;
    
  }
   
