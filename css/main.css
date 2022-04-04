@@ -510,7 +510,13 @@ header {
   margin: 0;
 }
 
-.clients__card {
+.clients__item .client__icons {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -528,22 +534,12 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__card:hover, .clients__card:focus {
+.clients__link:hover .client__icons, .clients__link:focus .client__icons {
+  fill: #2196f3;
+}
+
+.clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
-}
-
-.clients__card:hover .client__icons {
-  fill: #2196f3;
-}
-
-.clients__card:hover:focus .client__icons {
-  fill: #2196f3;
-}
-
-.clients__card:hover .client__icons {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -900,6 +896,7 @@ footer {
           transform: translateY(0);
 }
 
+/* backdrop */
 .backdrop {
   position: fixed;
   background: rgba(0, 0, 0, 0.2);
@@ -918,6 +915,24 @@ footer {
   pointer-events: none;
 }
 
+/* general */
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 448px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-indent: 42px;
+  cursor: pointer;
+}
+
 .modal {
   background: #ffffff;
   position: absolute;
@@ -933,6 +948,15 @@ footer {
   display: flex;
 }
 
+label {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
 .close__button {
   width: 30px;
   height: 30px;
@@ -940,7 +964,6 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -955,22 +978,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .register {
   padding: 40px;
-}
-
-input {
-  width: 448px;
-  height: 40px;
-  background: #ffffff;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  text-indent: 42px;
-  cursor: pointer;
 }
 
 .modal__title {
@@ -1017,7 +1029,7 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check__icon {
+.term .check__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1036,7 +1048,7 @@ input {
   cursor: pointer;
 }
 
-.checkbox__icon {
+.term .checkbox__icon {
   margin-right: 0px;
   fill: #ffffff;
   display: none;
@@ -1060,15 +1072,6 @@ input {
   letter-spacing: 0.03em;
 }
 
-label {
-  position: relative;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-
 .name__label,
 .tel__label,
 .email__label,
@@ -1081,9 +1084,17 @@ label {
   margin-top: 10px;
 }
 
-label {
-  display: block;
-  margin-bottom: 4px;
+.form__field:focus .modal-icon {
+  color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196f3;
+}
+
+.form__field:focus-within .modal-icon {
+  color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comments {
@@ -1148,10 +1159,10 @@ textarea {
 .name__label:focus-within,
 .tel__label:focus-within,
 .email__label:focus-within {
-  border: var(--blue-color);
+  border: #2196f3;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--blue-color);
+  fill: #2196f3;
 }
 
 .comments::-webkit-input-placeholder {
@@ -1196,15 +1207,7 @@ textarea {
   top: 32px;
 }
 
-.form__field:focus .modal-icon,
-.form__field:focus-within .modal-icon {
-  fill: var(--blue-color);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--blue-color);
-}
-
 .policy__terms {
-  color: var(--blue-color);
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
