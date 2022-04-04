@@ -1,90 +1,62 @@
-footer {
-    background-color: $brand-dark;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-  }
-  
-  .footer{
-    display: flex;
-    align-items: baseline;
-   
-  }
-  
-  .addres__contacts {
-    flex-grow: 2;
-    
-  }
-  
-  .address {
-    list-style: none;
-    margin-top: 20px;
-    padding: 0;
-    font-style: normal;
-   
-  
-  
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.addres__contacts {
+  flex-grow: 2;
+}
+
+.address {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  font-style: normal;
+
   .address__list {
     margin-top: 9px;
-    
   }
-  }
-
-  
-  .footer__logo {
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #ffffff;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-  }
-  
-  .footer__logo > span {
-    color: $blue-color;
-  }
-  
-  .footer__address {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
-    &:hover,
-    &:focus {
-      color: $blue-color;
-    }
 
-  }
-  
-  .footer__mail,
-  .footer__tel {
-    font-size: 14px;
-    line-height: 1.7px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+.footer__address {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
- &:hover {
+  &:focus {
     color: $blue-color;
   }
-  
+}
+
+.footer__mail,
+.footer__tel {
+  font-size: 14px;
+  line-height: 1.7px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:hover {
+    color: $blue-color;
+  }
+
   &:focus,
   &:focus {
     color: $blue-color;
   }
 }
-  
-  .footer__join {
-    margin-left: 70px;
-  }
-  
+
+.join__container {
+  margin-left: 70px;
+
   .join__slogan {
     font-weight: bold;
     font-size: 14px;
@@ -93,42 +65,46 @@ footer {
     text-transform: uppercase;
     color: #ffffff;
   }
-  
-  .footer__links {
+
+  .join__list {
     display: flex;
     list-style: none;
     gap: 10px;
     margin-top: 20px;
     padding-inline-start: 0px;
   }
-  
-  .footer__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    vertical-align: middle;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
- &:hover,
+}
+
+
+
+.join__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  vertical-align: middle;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
   &:focus {
     background-color: $blue-color;
   }
-}
-  
+
   .footer__icons {
     fill: #ffffff;
   }
-  
-  .subscribe__div {
-    margin-left: 93px;
+}
 
-  
+
+
+.subscribe__container {
+  margin-left: 93px;
+
   .subscribe__title {
     font-weight: bold;
     font-size: 14px;
@@ -137,7 +113,7 @@ footer {
     text-transform: uppercase;
     color: #ffffff;
   }
-  
+
   .subscribe__input {
     width: 358px;
     height: 50px;
@@ -145,27 +121,21 @@ footer {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-   
+
     background-color: var(--brand-dark);
     color: white;
     text-indent: 16px;
   }
-  
-  
-  
+
   .subscribe__form {
     margin-top: 20px;
-  }
-  
-  .icon__send {
-    margin-left: 10px;
-    fill: white;
-  }
-  
-  .subscribe__form {
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
+  .icon__send {
+    margin-left: 10px;
+    fill: white;
+  }
 }

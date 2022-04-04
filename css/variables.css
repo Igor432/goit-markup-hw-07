@@ -6,6 +6,10 @@
   margin-left: auto;
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -37,5 +41,14 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=variables.css.map */
